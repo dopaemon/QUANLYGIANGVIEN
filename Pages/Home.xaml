@@ -1,0 +1,58 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:QUANLYGIANGVIEN.Pages"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:Wpf="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf" x:Class="QUANLYGIANGVIEN.Pages.Home"
+             mc:Ignorable="d" 
+             d:DesignHeight="570" d:DesignWidth="770">
+    <Border CornerRadius="10" Background="{DynamicResource SecundaryBackgroundColor}">
+        <Grid>
+            <Ellipse Margin="30,19,610,422">
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="/Assets/Avatars/logoKTKTLD.jpg"/>
+                </Ellipse.Fill>
+            </Ellipse>
+            <materialDesign:Card Margin="30,192,520,320" UniformCornerRadius="10" Background="{DynamicResource PrimaryBackgroundColor}">
+                <Grid>
+                    <materialDesign:Card Margin="0,0,126,0" UniformCornerRadius="10" Background="#a177d6" FontSize="24">
+                        <Label x:Name="lblsogiaovien" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#ffffff"/>
+
+                    </materialDesign:Card>
+                    <Label Content="Giảng Viên" Foreground="#a177d6"  HorizontalAlignment="Left" Margin="94,0,0,0" VerticalAlignment="Center" FontSize="23"/>
+                </Grid>
+            </materialDesign:Card>
+            <materialDesign:Card Margin="273,192,264,319" UniformCornerRadius="10" Background="{DynamicResource PrimaryBackgroundColor}">
+                <Grid>
+                    <materialDesign:Card Margin="0,0,126,0" UniformCornerRadius="10" Background="#1BBC9B">
+                        <Label x:Name="lblsomonhoc" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" Foreground="White"/>
+
+                    </materialDesign:Card>
+                    <Label Content="Môn Học" Foreground="#1BBC9B" HorizontalAlignment="Left" Margin="116,0,0,0" VerticalAlignment="Center" FontSize="24"/>
+                </Grid>
+            </materialDesign:Card>
+            <materialDesign:Card Margin="524,192,30,319" UniformCornerRadius="10" Background="{DynamicResource PrimaryBackgroundColor}">
+                <Grid Margin="0,0,-12,0">
+                    <materialDesign:Card Margin="0,0,126,0" UniformCornerRadius="10" Background="#f4bc72">
+                        <Label x:Name="lblsokhoa" Content="" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24"/>
+                    </materialDesign:Card>
+                    <Label Content="Khoa" Foreground="#f4bc72" HorizontalAlignment="Left" Margin="126,0,0,0" VerticalAlignment="Center" FontSize="24"/>
+                </Grid>
+            </materialDesign:Card>
+            <materialDesign:Card Margin="30,285,30,36" UniformCornerRadius="10" Background="{DynamicResource PrimaryBackgroundColor}">
+                <Grid>
+
+                    <!--<Wpf:PieChart HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Height="229" Width="228"/>-->
+
+                    <Wpf:PieChart x:Name="QLGVCharts" Margin="0,0,355,0"/>
+
+                </Grid>
+            </materialDesign:Card>
+            <Label Foreground="{DynamicResource PrimaryBlueColor}" FontWeight="Bold" Content="Trường Cao Đẳng Kinh Tế Kỹ Thuật Lâm Đồng" HorizontalAlignment="Left" Margin="232,19,0,0" VerticalAlignment="Top" FontSize="24"/>
+            <Label Foreground="{DynamicResource PrimaryBlueColor}" FontWeight="Bold" Content="Lớp: T3K21 - 11D" HorizontalAlignment="Left" Margin="583,60,0,0" VerticalAlignment="Top" FontSize="20"/>
+            <Label Foreground="{DynamicResource PrimaryBlueColor}" FontWeight="Bold" Content="Tên: Trần Nguyễn Tuấn Anh" HorizontalAlignment="Left" Margin="485,93,0,0" VerticalAlignment="Top" FontSize="20"/>
+        </Grid>
+    </Border>
+</UserControl>
