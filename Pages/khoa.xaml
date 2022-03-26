@@ -14,13 +14,13 @@
         <Grid>
             <materialDesign:Card Margin="405,10,10,294" UniformCornerRadius="10" Background="{DynamicResource PrimaryBackgroundColor}">
                 <Grid Margin="0,0,0,10">
-                    <TextBox x:Name="txtmamh"
+                    <TextBox x:Name="txtmakhoa"
                         Style="{StaticResource MaterialDesignFilledTextBox}"
                         VerticalAlignment="Top"
                         AcceptsReturn="True"
                         TextWrapping="Wrap"
                         MaxWidth="400"
-                        materialDesign:HintAssist.Hint="Mã môn học"
+                        materialDesign:HintAssist.Hint="Mã khoa"
                         IsEnabled="{Binding ElementName=MaterialDesignFilledTextBoxEnabledComboBox}" Height="41" Margin="10,10,10,0" />
 
                     <TextBox x:Name="txttenmh"
@@ -29,7 +29,7 @@
                         AcceptsReturn="True"
                         TextWrapping="Wrap"
                         MaxWidth="400"
-                        materialDesign:HintAssist.Hint="Tên môn học"
+                        materialDesign:HintAssist.Hint="Tên khoa"
                         IsEnabled="{Binding ElementName=MaterialDesignFilledTextBoxEnabledComboBox}" Height="41" Margin="10,57,10,0" />
 
                     <TextBox x:Name="txtsotiet"
@@ -38,49 +38,28 @@
                         AcceptsReturn="True"
                         TextWrapping="Wrap"
                         MaxWidth="400"
-                        materialDesign:HintAssist.Hint="Số tiết"
+                        materialDesign:HintAssist.Hint="Điện thoại"
                         IsEnabled="{Binding ElementName=MaterialDesignFilledTextBoxEnabledComboBox}" 
                         Height="42" 
                         Margin="10,0,10,0" PreviewTextInput="txtsotiet_PreviewTextInput" />
-
-                    <TextBox x:Name="txtmakhoa"
+                    <TextBox x:Name="txttenkhoamoi"
                         Style="{StaticResource MaterialDesignFilledTextBox}"
                         VerticalAlignment="Top"
                         AcceptsReturn="True"
                         TextWrapping="Wrap"
                         MaxWidth="400"
-                        materialDesign:HintAssist.Hint="Mã Khoa"
-                        IsEnabled="{Binding ElementName=MaterialDesignFilledTextBoxEnabledComboBox}" 
-                        Height="42" 
-                        Margin="10,159,10,0" />
-                    <TextBox x:Name="txttenmhmoi"
-                        Style="{StaticResource MaterialDesignFilledTextBox}"
-                        VerticalAlignment="Top"
-                        AcceptsReturn="True"
-                        TextWrapping="Wrap"
-                        MaxWidth="400"
-                        materialDesign:HintAssist.Hint="Tên môn học mới"
+                        materialDesign:HintAssist.Hint="Tên khoa mới"
                         IsEnabled="{Binding ElementName=MaterialDesignFilledTextBoxEnabledComboBox}" Height="41" Margin="10,57,10,0" />
-                    <TextBox x:Name="txtsotietmoi"
+                    <TextBox x:Name="txtdienthoaimoi"
                         Style="{StaticResource MaterialDesignFilledTextBox}"
                         VerticalAlignment="Center"
                         AcceptsReturn="True"
                         TextWrapping="Wrap"
                         MaxWidth="400"
-                        materialDesign:HintAssist.Hint="Số tiết mới"
+                        materialDesign:HintAssist.Hint="Điện thoại mới"
                         IsEnabled="{Binding ElementName=MaterialDesignFilledTextBoxEnabledComboBox}" 
                         Height="42" 
-                        Margin="10,0,10,0" PreviewTextInput="txtsotietmoi_PreviewTextInput" />
-                    <TextBox x:Name="txtmakhoamoi"
-                        Style="{StaticResource MaterialDesignFilledTextBox}"
-                        VerticalAlignment="Top"
-                        AcceptsReturn="True"
-                        TextWrapping="Wrap"
-                        MaxWidth="400"
-                        materialDesign:HintAssist.Hint="Mã khoa mới"
-                        IsEnabled="{Binding ElementName=MaterialDesignFilledTextBoxEnabledComboBox}" 
-                        Height="42" 
-                        Margin="10,159,10,0" />
+                        Margin="10,0,10,0" PreviewTextInput="txtdienthoaimoi_PreviewTextInput" />
                 </Grid>
             </materialDesign:Card>
             <materialDesign:Card Margin="10,10,385,294" UniformCornerRadius="10" Background="{DynamicResource PrimaryBackgroundColor}">
@@ -98,11 +77,11 @@
                                   UpdateSourceTrigger="PropertyChanged">
                             </Binding>
                         </ComboBox.SelectedItem>
-                        <ComboBoxItem Content="Nhập môn học"/>
-                        <ComboBoxItem Content="Xem môn học"/>
-                        <ComboBoxItem Content="Xóa môn học"/>
-                        <ComboBoxItem Content="Sửa môn học"/>
-                        <ComboBoxItem Content="Tìm môn học"/>
+                        <ComboBoxItem Content="Nhập khoa"/>
+                        <ComboBoxItem Content="Xem khoa"/>
+                        <ComboBoxItem Content="Xóa Khoa"/>
+                        <ComboBoxItem Content="Sửa khoa"/>
+                        <ComboBoxItem Content="Tìm khoa"/>
                     </ComboBox>
                     <Grid Margin="193,79,59,139">
                         <materialDesign:Badged
@@ -139,7 +118,7 @@
             </materialDesign:Card>
             <materialDesign:Card Margin="10,294,10,10" UniformCornerRadius="10" Background="{DynamicResource PrimaryBackgroundColor}">
                 <Grid>
-                    <DataGrid x:Name="dtgrmonhoc"
+                    <DataGrid x:Name="dtgrkhoa"
                       IsReadOnly="True"
                       materialDesign:DataGridAssist.CornerRadius="10"
                       CanUserAddRows="False"
@@ -149,5 +128,4 @@
             </materialDesign:Card>
         </Grid>
     </Border>
-
 </Page>
