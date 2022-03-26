@@ -42,11 +42,8 @@ Chức năng chính:
 
 ## Background
 <img src="https://raw.githubusercontent.com/dopaemon/QUANLYGIANGVIEN/Application/README/HOME.png">
-
 <img src="https://raw.githubusercontent.com/dopaemon/QUANLYGIANGVIEN/Application/README/GIANGVIEN.png">
-
 <img src="https://raw.githubusercontent.com/dopaemon/QUANLYGIANGVIEN/Application/README/MONHOC.png">
-
 <img src="https://raw.githubusercontent.com/dopaemon/QUANLYGIANGVIEN/Application/README/KHOA.png">
 
 
