@@ -2,7 +2,7 @@
 Chương trình quản lý giảng viên được code bằng C# ( .NET Frameworks 4.8 ) WPF - Đồ Án Môn Lập Trình WinForm - Trần Nguyễn Tuấn Anh - T3K21
 
 ## Background
-<img scr="https://github.com/dopaemon/QUANLYGIANGVIEN/blob/Application/README/README.png">
+<img scr="https://github.com/dopaemon/QUANLYGIANGVIEN/blob/Application/README.png">
 
 ## References
 ```
@@ -28,19 +28,20 @@ Chương trình quản lý giảng viên được code bằng C# ( .NET Framewor
   WindowsBase
   WindowsFormsIntegration
 ```
-## Infomations
 
+## Infomations
 ```
 Chức năng chính: 
-  - quản lý giáo viên
+  - quản lý danh sách giáo viên
     + các chức năng như nhập, xem, xóa, sửa
   - quản lý danh sách môn học
     + các chức năng như nhập, xem, xóa, sửa
   - quản lý khoa
     + các chức năng như nhập, xem, xóa, sửa
 ```
+
 ## Background
-<img scr="https://github.com/dopaemon/QUANLYGIANGVIEN/blob/Application/README/README.png">
+<img scr="https://github.com/dopaemon/QUANLYGIANGVIEN/blob/Application/README/HOME.png">
 <img scr="https://github.com/dopaemon/QUANLYGIANGVIEN/blob/Application/README/GIANGVIEN.png">
 <img scr="https://github.com/dopaemon/QUANLYGIANGVIEN/blob/Application/README/MONHOC.png">
 <img scr="https://github.com/dopaemon/QUANLYGIANGVIEN/blob/Application/README/KHOA.png">
