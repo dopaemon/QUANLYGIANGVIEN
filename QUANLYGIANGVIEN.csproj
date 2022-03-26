@@ -133,11 +133,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\NotesPage.xaml">
+    <Page Include="Pages\monhoc.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\PaymentPage.xaml">
+    <Page Include="Pages\khoa.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -158,11 +158,11 @@
     <Compile Include="Pages\Home.xaml.cs">
       <DependentUpon>Home.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\NotesPage.xaml.cs">
-      <DependentUpon>NotesPage.xaml</DependentUpon>
+    <Compile Include="Pages\monhoc.xaml.cs">
+      <DependentUpon>monhoc.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\PaymentPage.xaml.cs">
-      <DependentUpon>PaymentPage.xaml</DependentUpon>
+    <Compile Include="Pages\khoa.xaml.cs">
+      <DependentUpon>khoa.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\GiangVien.xaml.cs">
       <DependentUpon>GiangVien.xaml</DependentUpon>
@@ -186,7 +186,7 @@
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <None Include="QUANLYGIANGVIEN_TemporaryKey.pfx" />

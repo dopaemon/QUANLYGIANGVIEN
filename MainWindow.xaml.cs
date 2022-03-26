@@ -45,10 +45,11 @@ namespace QUANLYGIANGVIEN
             WindowState = WindowState.Minimized;
         }
 
+
         private void rdHome_Click(object sender, RoutedEventArgs e)
         {
            // PagesNavigation.Navigate(new HomePage());
-            
+
             PagesNavigation.Navigate(new System.Uri("Pages/Home.xaml", UriKind.RelativeOrAbsolute));
         }
 
@@ -59,17 +60,17 @@ namespace QUANLYGIANGVIEN
 
         private void rdNotes_Click(object sender, RoutedEventArgs e)
         {
-            PagesNavigation.Navigate(new System.Uri("Pages/NotesPage.xaml", UriKind.RelativeOrAbsolute));
+            PagesNavigation.Navigate(new System.Uri("Pages/monhoc.xaml", UriKind.RelativeOrAbsolute));
         }
 
         private void rdPayment_Click(object sender, RoutedEventArgs e)
         {
-            PagesNavigation.Navigate(new System.Uri("Pages/PaymentPage.xaml", UriKind.RelativeOrAbsolute));
+            PagesNavigation.Navigate(new System.Uri("Pages/khoa.xaml", UriKind.RelativeOrAbsolute));
         }
 
         private void github_StackPanel(object sender, RoutedEventArgs e)
         {
-            //
+            // https://github.com/dopaemon
         }
     }
 }

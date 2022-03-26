@@ -5,10 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:QUANLYGIANGVIEN"
         mc:Ignorable="d" Name="home"
-        Title="MainWindow" Height="650" Width="1000"
+        Height="650" Width="1000"
         WindowStartupLocation="CenterScreen" WindowStyle="None"
         Background="Transparent" AllowsTransparency="True"
-        ResizeMode="NoResize" WindowState="Normal">
+        ResizeMode="NoResize" WindowState="Normal"
+        Title="Phần Mềm Quản Lý Giảng Viên">
     <Border CornerRadius="8" Background="{DynamicResource PrimaryBackgroundColor}">
         <Grid>
             <Grid.ColumnDefinitions>
@@ -56,7 +57,7 @@
                     <StackPanel Grid.Row="3">
                         <RadioButton x:Name="rdHome" IsChecked="True" Content="Home" Style="{DynamicResource MenuRadioButtonStyle}" Tag="{DynamicResource home}" Click="rdHome_Click"/>
                         <RadioButton x:Name="rdSounds" Content="Giảng Viên" Style="{DynamicResource MenuRadioButtonStyle}" Tag="{DynamicResource giangvien}" Margin="0 5 0 5" Click="rdSounds_Click"/>
-                        <RadioButton x:Name="rdNotes" Content="Môn" Style="{DynamicResource MenuRadioButtonStyle}" Tag="{DynamicResource mon}" Click="rdNotes_Click"/>
+                        <RadioButton x:Name="rdNotes" Content="Môn Học" Style="{DynamicResource MenuRadioButtonStyle}" Tag="{DynamicResource mon}" Click="rdNotes_Click"/>
                         <RadioButton x:Name="rdPayment" Content="Khoa" Style="{DynamicResource MenuRadioButtonStyle}" Tag="{DynamicResource khoa}" Margin="0 5 0 5" Click="rdPayment_Click"/>
                     </StackPanel>
 

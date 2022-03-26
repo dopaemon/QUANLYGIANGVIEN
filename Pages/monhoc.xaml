@@ -1,0 +1,153 @@
+﻿<Page x:Class="QUANLYGIANGVIEN.Pages.monhoc"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:Wpf="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+      xmlns:local="clr-namespace:QUANLYGIANGVIEN.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="570" d:DesignWidth="770"
+      Title="Môn Học">
+
+    <Border CornerRadius="10" Background="{DynamicResource SecundaryBackgroundColor}">
+        <Grid>
+            <materialDesign:Card Margin="405,10,10,294" UniformCornerRadius="10" Background="{DynamicResource PrimaryBackgroundColor}">
+                <Grid Margin="0,0,0,10">
+                    <TextBox x:Name="txtmamh"
+                        Style="{StaticResource MaterialDesignFilledTextBox}"
+                        VerticalAlignment="Top"
+                        AcceptsReturn="True"
+                        TextWrapping="Wrap"
+                        MaxWidth="400"
+                        materialDesign:HintAssist.Hint="Mã môn học"
+                        IsEnabled="{Binding ElementName=MaterialDesignFilledTextBoxEnabledComboBox}" Height="41" Margin="10,10,10,0" />
+
+                    <TextBox x:Name="txttenmh"
+                        Style="{StaticResource MaterialDesignFilledTextBox}"
+                        VerticalAlignment="Top"
+                        AcceptsReturn="True"
+                        TextWrapping="Wrap"
+                        MaxWidth="400"
+                        materialDesign:HintAssist.Hint="Tên môn học"
+                        IsEnabled="{Binding ElementName=MaterialDesignFilledTextBoxEnabledComboBox}" Height="41" Margin="10,57,10,0" />
+
+                    <TextBox x:Name="txtsotiet"
+                        Style="{StaticResource MaterialDesignFilledTextBox}"
+                        VerticalAlignment="Center"
+                        AcceptsReturn="True"
+                        TextWrapping="Wrap"
+                        MaxWidth="400"
+                        materialDesign:HintAssist.Hint="Số tiết"
+                        IsEnabled="{Binding ElementName=MaterialDesignFilledTextBoxEnabledComboBox}" 
+                        Height="42" 
+                        Margin="10,0,10,0" PreviewTextInput="txtsotiet_PreviewTextInput" />
+
+                    <TextBox x:Name="txtmakhoa"
+                        Style="{StaticResource MaterialDesignFilledTextBox}"
+                        VerticalAlignment="Top"
+                        AcceptsReturn="True"
+                        TextWrapping="Wrap"
+                        MaxWidth="400"
+                        materialDesign:HintAssist.Hint="Mã Khoa"
+                        IsEnabled="{Binding ElementName=MaterialDesignFilledTextBoxEnabledComboBox}" 
+                        Height="42" 
+                        Margin="10,159,10,0" />
+                    <TextBox x:Name="txttenmhmoi"
+                        Style="{StaticResource MaterialDesignFilledTextBox}"
+                        VerticalAlignment="Top"
+                        AcceptsReturn="True"
+                        TextWrapping="Wrap"
+                        MaxWidth="400"
+                        materialDesign:HintAssist.Hint="Tên môn học mới"
+                        IsEnabled="{Binding ElementName=MaterialDesignFilledTextBoxEnabledComboBox}" Height="41" Margin="10,57,10,0" />
+                    <TextBox x:Name="txtsotietmoi"
+                        Style="{StaticResource MaterialDesignFilledTextBox}"
+                        VerticalAlignment="Center"
+                        AcceptsReturn="True"
+                        TextWrapping="Wrap"
+                        MaxWidth="400"
+                        materialDesign:HintAssist.Hint="Số tiết mới"
+                        IsEnabled="{Binding ElementName=MaterialDesignFilledTextBoxEnabledComboBox}" 
+                        Height="42" 
+                        Margin="10,0,10,0" PreviewTextInput="txtsotietmoi_PreviewTextInput" />
+                    <TextBox x:Name="txtmakhoamoi"
+                        Style="{StaticResource MaterialDesignFilledTextBox}"
+                        VerticalAlignment="Top"
+                        AcceptsReturn="True"
+                        TextWrapping="Wrap"
+                        MaxWidth="400"
+                        materialDesign:HintAssist.Hint="Mã khoa mới"
+                        IsEnabled="{Binding ElementName=MaterialDesignFilledTextBoxEnabledComboBox}" 
+                        Height="42" 
+                        Margin="10,159,10,0" />
+                </Grid>
+            </materialDesign:Card>
+            <materialDesign:Card Margin="10,10,385,294" UniformCornerRadius="10" Background="{DynamicResource PrimaryBackgroundColor}">
+                <Grid Margin="3,0,-3,0">
+                    <ComboBox x:Name="cbchucnang"
+                      Style="{StaticResource MaterialDesignOutlinedComboBox}"
+                      FontSize="15"
+                      materialDesign:HintAssist.Hint="Chức Năng"
+                      materialDesign:TextFieldAssist.HasClearButton="True"
+                      Width="256" Margin="60,23,59,192">
+                        <ComboBox.SelectedItem>
+                            <Binding
+                                  Path="SelectedValidationOutlined"
+                                  Mode="TwoWay"
+                                  UpdateSourceTrigger="PropertyChanged">
+                            </Binding>
+                        </ComboBox.SelectedItem>
+                        <ComboBoxItem Content="Nhập môn học"/>
+                        <ComboBoxItem Content="Xem môn học"/>
+                        <ComboBoxItem Content="Xóa môn học"/>
+                        <ComboBoxItem Content="Sửa môn học"/>
+                        <ComboBoxItem Content="Tìm môn học"/>
+                    </ComboBox>
+                    <Grid Margin="193,79,59,139">
+                        <materialDesign:Badged
+                                Badge="{materialDesign:PackIcon Heart}"
+                                BadgeColorZoneMode="SecondaryMid" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" RenderTransformOrigin="0.487,0.2">
+                            <Button x:Name="btnrun"
+                                    Style="{StaticResource MaterialDesignOutlinedButton}"
+                                    ToolTip="Thực thi nhiệm vụ đã nhận từ menu"
+                                    Content="Bắt Đầu"
+                                    Width="88"
+                                    IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" Height="30" Click="btnrun_Click" />
+                        </materialDesign:Badged>
+                    </Grid>
+                    <Grid Margin="60,79,187,139">
+                        <materialDesign:Badged
+                                Badge="{materialDesign:PackIcon Heart}"
+                                BadgeColorZoneMode="SecondaryMid" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" RenderTransformOrigin="0.487,0.2">
+                            <Button x:Name="btnc"
+                                    Style="{StaticResource MaterialDesignOutlinedButton}"
+                                    ToolTip="Xác nhận chọn chức năng từ menu"
+                                    Content="Chọn"
+                                    Width="88"
+                                    IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}" Height="30" Click="btnc_Click" />
+                        </materialDesign:Badged>
+                    </Grid>
+                    <GroupBox
+                            Header="Log"
+                            Margin="10,133,16,10">
+                        <TextBlock x:Name="txtthongbao"
+                            FontSize="15"
+                            Text="" />
+                    </GroupBox>
+                </Grid>
+            </materialDesign:Card>
+            <materialDesign:Card Margin="10,294,10,10" UniformCornerRadius="10" Background="{DynamicResource PrimaryBackgroundColor}">
+                <Grid>
+                    <DataGrid x:Name="dtgrmonhoc"
+                      IsReadOnly="True"
+                      materialDesign:DataGridAssist.CornerRadius="10"
+                      CanUserAddRows="False"
+                      SelectionUnit="Cell"
+                      SelectionMode="Extended" />
+                </Grid>
+            </materialDesign:Card>
+        </Grid>
+    </Border>
+
+</Page>
