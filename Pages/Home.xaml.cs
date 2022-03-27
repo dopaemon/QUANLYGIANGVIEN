@@ -83,7 +83,7 @@ namespace QUANLYGIANGVIEN.Pages
                     DataLabels = true,
                     Fill = (Brush)converter.ConvertFrom("#f4bc72"),
                     Values = new LiveCharts.ChartValues<decimal> {
-                        int.Parse(monhoc),
+                        int.Parse(khoa),
                     },
                 }
             };

@@ -87,7 +87,7 @@ namespace QUANLYGIANGVIEN.Pages
             }
             else if (cbchucnang.SelectedIndex == -1)
             {
-                txtthongbao.Text = "Bạn chưa chọn môn học";
+                txtthongbao.Text = "Bạn chưa chọn chức năng";
             }
 
             if (checkedbtn == 1)

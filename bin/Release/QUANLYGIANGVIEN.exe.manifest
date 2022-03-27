@@ -270,14 +270,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="QUANLYGIANGVIEN.exe" size="113680">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="QUANLYGIANGVIEN.exe" size="115728">
       <assemblyIdentity name="QUANLYGIANGVIEN" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>GJgTMvIkKSDqb/AFce+Fb/SfavX6wUR7g6eqdHK5A58=</dsig:DigestValue>
+        <dsig:DigestValue>swUGzcw/GcYfVBQP/NDyYGacMIo6jkUl7KdUah4ASVo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
