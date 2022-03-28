@@ -35,6 +35,8 @@ D:\DoAnC#\QUANLYGIANGVIEN\obj\Release\QUANLYGIANGVIEN.csproj.AssemblyReference.c
 D:\DoAnC#\QUANLYGIANGVIEN\obj\Release\QUANLYGIANGVIEN.csproj.SuggestedBindingRedirects.cache
 D:\DoAnC#\QUANLYGIANGVIEN\obj\Release\MainWindow.g.cs
 D:\DoAnC#\QUANLYGIANGVIEN\obj\Release\Pages\Home.g.cs
+D:\DoAnC#\QUANLYGIANGVIEN\obj\Release\Pages\monhoc.g.cs
+D:\DoAnC#\QUANLYGIANGVIEN\obj\Release\Pages\khoa.g.cs
 D:\DoAnC#\QUANLYGIANGVIEN\obj\Release\Pages\GiangVien.g.cs
 D:\DoAnC#\QUANLYGIANGVIEN\obj\Release\App.g.cs
 D:\DoAnC#\QUANLYGIANGVIEN\obj\Release\QUANLYGIANGVIEN_MarkupCompile.cache
@@ -43,6 +45,8 @@ D:\DoAnC#\QUANLYGIANGVIEN\obj\Release\App.baml
 D:\DoAnC#\QUANLYGIANGVIEN\obj\Release\Assets\Icons\Icons.baml
 D:\DoAnC#\QUANLYGIANGVIEN\obj\Release\MainWindow.baml
 D:\DoAnC#\QUANLYGIANGVIEN\obj\Release\Pages\Home.baml
+D:\DoAnC#\QUANLYGIANGVIEN\obj\Release\Pages\monhoc.baml
+D:\DoAnC#\QUANLYGIANGVIEN\obj\Release\Pages\khoa.baml
 D:\DoAnC#\QUANLYGIANGVIEN\obj\Release\Pages\GiangVien.baml
 D:\DoAnC#\QUANLYGIANGVIEN\obj\Release\Styles\MainStyle.baml
 D:\DoAnC#\QUANLYGIANGVIEN\obj\Release\Themes\LightTheme.baml
@@ -55,7 +59,3 @@ D:\DoAnC#\QUANLYGIANGVIEN\obj\Release\QUANLYGIANGVIEN.application
 D:\DoAnC#\QUANLYGIANGVIEN\obj\Release\QUANLYGIANGVIEN.csproj.CopyComplete
 D:\DoAnC#\QUANLYGIANGVIEN\obj\Release\QUANLYGIANGVIEN.exe
 D:\DoAnC#\QUANLYGIANGVIEN\obj\Release\QUANLYGIANGVIEN.pdb
-D:\DoAnC#\QUANLYGIANGVIEN\obj\Release\Pages\monhoc.g.cs
-D:\DoAnC#\QUANLYGIANGVIEN\obj\Release\Pages\monhoc.baml
-D:\DoAnC#\QUANLYGIANGVIEN\obj\Release\Pages\khoa.g.cs
-D:\DoAnC#\QUANLYGIANGVIEN\obj\Release\Pages\khoa.baml
