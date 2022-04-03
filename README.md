@@ -1,10 +1,8 @@
 # QUANLYGIANGVIEN
 Chương trình quản lý giảng viên được code bằng C# ( .NET Frameworks 4.8 ) WPF - Đồ Án Môn Lập Trình WinForm - Trần Nguyễn Tuấn Anh - T3K21
-
-## Background
 <img src="https://raw.githubusercontent.com/dopaemon/QUANLYGIANGVIEN/Application/README.png">
 
-## References
+# References
 ```
   LiveCharts
   LiveCharts.WinForm
@@ -29,7 +27,7 @@ Chương trình quản lý giảng viên được code bằng C# ( .NET Framewor
   WindowsFormsIntegration
 ```
 
-## Infomations
+# Infomations
 ```
 Chức năng chính: 
   - quản lý danh sách giáo viên
@@ -40,7 +38,7 @@ Chức năng chính:
     + các chức năng như nhập, xem, xóa, sửa
 ```
 
-## Background
+# Background
 <img src="https://raw.githubusercontent.com/dopaemon/QUANLYGIANGVIEN/Application/README/HOME.png">
 <img src="https://raw.githubusercontent.com/dopaemon/QUANLYGIANGVIEN/Application/README/GIANGVIEN.png">
 <img src="https://raw.githubusercontent.com/dopaemon/QUANLYGIANGVIEN/Application/README/MONHOC.png">
@@ -63,10 +61,14 @@ Chức năng chính:
 ## Ví dụ tìm bảng
 <img src="https://raw.githubusercontent.com/dopaemon/QUANLYGIANGVIEN/Application/README/TIM.png">
 
-## Credits
+# Credits
 ```
-  https://github.com/dopaemon
-  https://fb.me/KernelPanix
-  https://t.me/KernelPanix
-  Zalo: 0325555077
+  Tên: Trần Nguyễn Tuấn Anh
+  Lớp: 11D - T3K21
+  Trường: Cao Đẳng Kinh Tế Kỹ Thuật Lâm Đồng
+  Contact:
+	https://github.com/dopaemon
+	https://fb.me/KernelPanix
+	https://t.me/KernelPanix
+	Zalo: 0325555077
 ```
