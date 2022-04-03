@@ -118,15 +118,7 @@ namespace QUANLYGIANGVIEN.Pages
             con.Close();
             if (magv > 0) {
                 txtthongbao.Text = "Giảng Viên Đã Tồn Tại !!!";
-                con.Open();
-                SqlCommand view = new SqlCommand("SP_CHECKGIANGVIEN", con);
-                view.CommandType = CommandType.StoredProcedure;
-                view.Parameters.AddWithValue("@MAGV", txtmagv.Text);
-                SqlDataAdapter sda = new SqlDataAdapter(view);
-                DataTable dt = new DataTable();
-                sda.Fill(dt);
-                dtgrgiangvien.ItemsSource = dt.DefaultView;
-                con.Close();
+                checkgiangvien();
             } else {
                 con.Open();
                 SqlCommand checkmakhoa = new SqlCommand("SELECT COUNT(MAKHOA) FROM KHOA WHERE ([MAKHOA] = @MAKHOA)", con);
@@ -148,15 +140,7 @@ namespace QUANLYGIANGVIEN.Pages
 
                     txtthongbao.Text = "Nhập giảng viên thành công";
 
-                    con.Open();
-                    SqlCommand view = new SqlCommand("SP_CHECKGIANGVIEN", con);
-                    view.CommandType = CommandType.StoredProcedure;
-                    view.Parameters.AddWithValue("@MAGV", txtmagv.Text);
-                    SqlDataAdapter sdaa = new SqlDataAdapter(view);
-                    DataTable dtt = new DataTable();
-                    sdaa.Fill(dtt);
-                    dtgrgiangvien.ItemsSource = dtt.DefaultView;
-                    con.Close();
+                    checkgiangvien();
                 } else {
                     if (String.IsNullOrEmpty(txtmagv.Text)) { txtthongbao.Text = "Bạn chưa nhập mã giảng viên"; 
                     } else { 
@@ -190,14 +174,7 @@ namespace QUANLYGIANGVIEN.Pages
             dtgrgiangvien.ItemsSource = dt.DefaultView;
             con.Close();
 
-            con.Open();
-            SqlCommand xemgv = new SqlCommand("SP_XEMGIANGVIEN", con);
-            xemgv.CommandType = CommandType.StoredProcedure;
-            SqlDataAdapter sdaa = new SqlDataAdapter(xemgv);
-            DataTable dtt = new DataTable();
-            sdaa.Fill(dtt);
-            dtgrgiangvien.ItemsSource = dtt.DefaultView;
-            con.Close();
+            xemgiangvien();
         }
 
         private void capnhatgiangvien()
@@ -216,15 +193,7 @@ namespace QUANLYGIANGVIEN.Pages
             dtgrgiangvien.ItemsSource = dt.DefaultView;
             con.Close();
 
-            con.Open();
-            SqlCommand view = new SqlCommand("SP_CHECKGIANGVIEN", con);
-            view.CommandType = CommandType.StoredProcedure;
-            view.Parameters.AddWithValue("@MAGV", txtmagv.Text);
-            SqlDataAdapter sdaa = new SqlDataAdapter(view);
-            DataTable dtt = new DataTable();
-            sdaa.Fill(dtt);
-            dtgrgiangvien.ItemsSource = dtt.DefaultView;
-            con.Close();
+            checkgiangvien();
         }
 
         private void timgiangvien()
@@ -241,6 +210,19 @@ namespace QUANLYGIANGVIEN.Pages
             DataTable dt = new DataTable();
             sda.Fill(dt);
             dtgrgiangvien.ItemsSource = dt.DefaultView;
+            con.Close();
+        }
+
+        private void checkgiangvien()
+        {
+            con.Open();
+            SqlCommand view = new SqlCommand("SP_CHECKGIANGVIEN", con);
+            view.CommandType = CommandType.StoredProcedure;
+            view.Parameters.AddWithValue("@MAGV", txtmagv.Text);
+            SqlDataAdapter sdaa = new SqlDataAdapter(view);
+            DataTable dtt = new DataTable();
+            sdaa.Fill(dtt);
+            dtgrgiangvien.ItemsSource = dtt.DefaultView;
             con.Close();
         }
 
