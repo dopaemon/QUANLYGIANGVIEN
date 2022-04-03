@@ -46,27 +46,23 @@ Chức năng chính:
 <img src="https://raw.githubusercontent.com/dopaemon/QUANLYGIANGVIEN/Application/README/MONHOC.png">
 <img src="https://raw.githubusercontent.com/dopaemon/QUANLYGIANGVIEN/Application/README/KHOA.png">
 
-## Coder macOS Windows
-```
-Ví dụ nhập bảng
-```
+# Demo Code macOS
+
+## Ví dụ nhập bảng
 <img src="https://raw.githubusercontent.com/dopaemon/QUANLYGIANGVIEN/Application/README/NHAP.png">
-```
-Ví dụ xem bảng
-```
+
+## Ví dụ xem bảng
 <img src="https://raw.githubusercontent.com/dopaemon/QUANLYGIANGVIEN/Application/README/XEM.png">
-```
-Ví dụ xóa bảng
-```
+
+## Ví dụ xóa bảng
 <img src="https://raw.githubusercontent.com/dopaemon/QUANLYGIANGVIEN/Application/README/XOA.png">
-```
-Ví dụ sửa bảng
-```
+
+## Ví dụ sửa bảng
 <img src="https://raw.githubusercontent.com/dopaemon/QUANLYGIANGVIEN/Application/README/SUA.png">
-```
-Ví dụ tìm bảng
-```
+
+## Ví dụ tìm bảng
 <img src="https://raw.githubusercontent.com/dopaemon/QUANLYGIANGVIEN/Application/README/TIM.png">
+
 ## Credits
 ```
   https://github.com/dopaemon
